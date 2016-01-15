@@ -12,6 +12,5 @@
       "css": [],
       "js": ["jquery.min.js", "jquery.cookie.js", "stripthis.js"]
     }
-  ]
-  
+  ]  
 }
