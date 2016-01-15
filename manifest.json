@@ -1,0 +1,17 @@
+{
+  // Required
+  "manifest_version": 2,
+  "name": "StripThis",
+  "version": "1.0",
+
+  // Recommended
+  "description": "Strip styles of website",
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "css": [],
+      "js": ["jquery.min.js", "jquery.cookie.js", "stripthis.js"]
+    }
+  ]
+  
+}
