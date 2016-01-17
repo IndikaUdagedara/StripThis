@@ -1,8 +1,8 @@
 function initialise() {
 
-	$(window).bind('blur', function() {
-		console.log("lost focus");
-	});
+	// $(window).bind('blur', function() {
+		// console.log("lost focus");
+	// });
 
 	if ($.cookie('stripthis') == 1) {
 		stripCSS();
@@ -49,6 +49,7 @@ function stripCSS() {
 		.attr('width', '0')
 		.attr('height', '0')
 		.removeAttr('alt');
+	$("iframe[src*='youtube']").remove();
 }
 
 initialise();
