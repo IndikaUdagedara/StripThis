@@ -49,7 +49,11 @@ function stripCSS() {
 		.attr('width', '0')
 		.attr('height', '0')
 		.removeAttr('alt');
+
 	$("iframe[src*='youtube']").remove();
+
+	// share this fb/twitter buttons
+	$("span[class^='st_']").remove()
 }
 
 initialise();
